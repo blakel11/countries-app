@@ -1,4 +1,38 @@
-.app-title {
+.hero-title {
   text-align: center; }
+
+.header {
+  border-bottom: 2px solid black; }
+
+#intro {
+  margin-top: 45px; }
+
+.browse {
+  margin: 35px auto;
+  display: block;
+  width: 150px;
+  background: #65A2C5;
+  border-color: #65A2C5;
+  color: white;
+  text-shadow: none; }
+  .browse:hover {
+    background: #366e8e;
+    border-color: #366e8e;
+    color: white;
+    font-weight: 600px; }
+
+#list {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 35px auto; }
+  #list th, #list td {
+    text-align: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 5px 10px;
+    margin: 0; }
+  #list th {
+    background: lightgrey; }
 
 /*# sourceMappingURL=main.css.map */

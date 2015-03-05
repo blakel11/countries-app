@@ -1,3 +1,29 @@
-.app-title {
+.hero-title {
 	text-align: center;
+}
+
+.header {
+	border-bottom: 2px solid black;
+}
+
+#intro {
+	margin-top: 45px;
+}
+
+$buttonColor : #65A2C5;
+    .browse {
+        margin: 35px auto;
+        display: block;
+        width: 150px;
+        background: $buttonColor;
+        border-color: $buttonColor;
+        color: white;
+        text-shadow: none;
+
+        &:hover {
+          background: darken($buttonColor, 20%);
+          border-color: darken($buttonColor, 20%);
+          color: white;
+          font-weight: 600px;
+        }
 }

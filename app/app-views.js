@@ -1,0 +1,1 @@
+var viewsMod = angular.module('countryAppViews', ['ngRoute']);
