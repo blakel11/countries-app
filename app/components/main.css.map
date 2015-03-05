@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACV,UAAU,EAAE,MAAM",
+"sources": ["sass/_globals.scss"],
+"names": [],
+"file": "main.css"
+}

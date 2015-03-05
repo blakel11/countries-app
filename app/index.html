@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="countryApp"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css ./_assets/combined.css -->
+    <link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./components/main.css">
+    <!-- endbuild -->
+    <script src="./bower_components/modernizr/modernizr.js"></script>
+</head>
+<body ng-controller="" class="container">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <h1 class="app-title">Countries & Capitals</h1>
+
+  <div ng-view></div>
+  
+<!-- build:js ./_assets/combined.js -->
+<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="./bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="./bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="./countries-list/countries-list.js"></script>
+<script type="text/javascript" src="./country-detail/country-detail.js"></script>
+<script type="text/javascript" src="./app-views.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- endbuild -->
+</body>
+</html>
