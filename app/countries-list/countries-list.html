@@ -8,14 +8,14 @@
 			<th>Population</th>
 			<th>Continent</th>
 		</tr>
-		<tr ng-repeat="country in countries | orderBy: 'name' ">
-			<td>{{country.name}}</td>
-			<td>{{country.code}}</td>
-			<td>{{country.captial}}</td>
-			<td>{{country.area}}</td>
-			<td>{{country.population}}</td>
-			<td>{{country.continent}}</td>
-		</tr>
+		<a href="" class="detail-link"><tr ng-repeat="country in countries | orderBy: 'name' ">
+				<td>{{country.name}}</td>
+				<td>{{country.code}}</td>
+				<td>{{country.captial}}</td>
+				<td>{{country.area}}</td>
+				<td>{{country.population}}</td>
+				<td>{{country.continent}}</td>
+			</tr></a>
 	</table>
 	<a href="#!/" class="browse btn btn-default">Home</a>
 </div>

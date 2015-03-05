@@ -1,0 +1,29 @@
+.data-title {
+	text-align: right;
+	margin: 5px 0;
+}
+
+.data-point {
+	text-align: left;
+	margin: 5px 0;
+}
+
+.country-img {
+	margin-top: 45px;
+	text-align: right;
+}
+
+.flag-img {
+	margin-top: 45px;
+	text-align: left;
+}
+
+#country-detail {
+	margin-top: 45px;
+	.browse {
+		display: inline-block;
+	}
+	.center-block {
+		width: 60%;
+	}
+}

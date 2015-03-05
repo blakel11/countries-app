@@ -21,6 +21,29 @@
     color: white;
     font-weight: 600px; }
 
+.data-title {
+  text-align: right;
+  margin: 5px 0; }
+
+.data-point {
+  text-align: left;
+  margin: 5px 0; }
+
+.country-img {
+  margin-top: 45px;
+  text-align: right; }
+
+.flag-img {
+  margin-top: 45px;
+  text-align: left; }
+
+#country-detail {
+  margin-top: 45px; }
+  #country-detail .browse {
+    display: inline-block; }
+  #country-detail .center-block {
+    width: 60%; }
+
 #list {
   text-align: center;
   border-top: 1px solid black;
@@ -34,5 +57,8 @@
     margin: 0; }
   #list th {
     background: lightgrey; }
+
+.detail-link:hover {
+  background: lightblue; }
 
 /*# sourceMappingURL=main.css.map */
