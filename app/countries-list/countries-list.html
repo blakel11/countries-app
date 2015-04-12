@@ -1,6 +1,6 @@
 <div id="countries-list" class="col-sm-8 col-sm-offset-2">
 	<table id="list">
-		<tr>
+		<tr class="">
 			<th>Name</th>
 			<th>Country Code</th>
 			<th>Capital</th>
@@ -8,14 +8,14 @@
 			<th>Population</th>
 			<th>Continent</th>
 		</tr>
-		<a href="" class="detail-link"><tr ng-repeat="country in countries | orderBy: 'name' ">
-				<td>{{country.name}}</td>
-				<td>{{country.code}}</td>
-				<td>{{country.captial}}</td>
-				<td>{{country.area}}</td>
-				<td>{{country.population}}</td>
+		<tr ng-repeat="country in countries | orderBy: 'name' " ng-click="countryLink(country.countryCode,country.capital)" class="country-search-query">
+				<td>{{country.countryName}}</td>
+				<td>{{country.countryCode}}</td>
+				<td>{{country.capital}}</td>
+				<td>{{country.areaInSqKm | number}}</td>
+				<td>{{country.population | number}}</td>
 				<td>{{country.continent}}</td>
-			</tr></a>
+			</tr>
 	</table>
 	<a href="#!/" class="browse btn btn-default">Home</a>
 </div>

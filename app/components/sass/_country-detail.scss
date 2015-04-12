@@ -1,12 +1,18 @@
 .data-title {
 	text-align: right;
-	margin: 5px 0;
+}
+.country-name {
+	text-align: center;
 }
 
 .data-point {
-	text-align: left;
-	margin: 5px 0;
+
 }
+
+.table-center {
+
+}
+
 
 .country-img {
 	margin-top: 45px;
@@ -19,6 +25,10 @@
 }
 
 #country-detail {
+	.neighbors {
+		text-align: center;
+		margin: 0 3px;
+	}
 	margin-top: 45px;
 	.browse {
 		display: inline-block;
@@ -26,4 +36,16 @@
 	.center-block {
 		width: 60%;
 	}
+
+	table {
+	height: 100% !important;
+	width: auto !important;
+	tbody {
+		margin: 0 auto;
+	}
+
+	td {
+		border-top: initial !important;
+	}
+}
 }

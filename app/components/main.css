@@ -1,3 +1,6 @@
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell; } }
 .hero-title {
   text-align: center; }
 
@@ -19,15 +22,46 @@
     background: #366e8e;
     border-color: #366e8e;
     color: white;
-    font-weight: 600px; }
+    font-weight: 600; }
+
+.loading {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 0; }
+  .loading:before {
+    position: fixed;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    opacity: 1;
+    background: white no-repeat center center;
+    background-image: url("img/loading-animation.gif"); }
+
+.animate-view.ng-enter,
+.animate-view.ng-leave {
+  transition: 1s linear all; }
+
+.animate-view.ng-enter {
+  opacity: 0; }
+
+.animate-view.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.animate-view.ng-leave {
+  opacity: 1; }
+
+.animate-view.ng-leave.ng-leave-active {
+  opacity: 0; }
 
 .data-title {
-  text-align: right;
-  margin: 5px 0; }
+  text-align: right; }
 
-.data-point {
-  text-align: left;
-  margin: 5px 0; }
+.country-name {
+  text-align: center; }
 
 .country-img {
   margin-top: 45px;
@@ -39,10 +73,20 @@
 
 #country-detail {
   margin-top: 45px; }
+  #country-detail .neighbors {
+    text-align: center;
+    margin: 0 3px; }
   #country-detail .browse {
     display: inline-block; }
   #country-detail .center-block {
     width: 60%; }
+  #country-detail table {
+    height: 100% !important;
+    width: auto !important; }
+    #country-detail table tbody {
+      margin: 0 auto; }
+    #country-detail table td {
+      border-top: initial !important; }
 
 #list {
   text-align: center;
@@ -59,6 +103,15 @@
     background: lightgrey; }
 
 .detail-link:hover {
+  background: lightblue; }
+
+table {
+  display: block;
+  height: 400px;
+  overflow-y: scroll; }
+
+tr.country-search-query:hover {
+  cursor: pointer;
   background: lightblue; }
 
 /*# sourceMappingURL=main.css.map */

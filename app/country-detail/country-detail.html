@@ -1,31 +1,46 @@
-<div id="country-detail" class="col-xs-8 col-xs-offset-2">
-	<h1 class="country-name">{{name}}</h1>
+
+<div id="country-detail">
+	<h1 class="country-name">{{country.countryName}}</h1>
+	<div class="table-center">
+	<table class="table table-responsive">
+		<tbody>
+			<tr >
+				<td class="data-title ">Population of Country:</td>
+				<td class="data-point ">{{country.population | number}}</td>
+			</tr>
+			<tr >
+				<td class="data-title ">Area:</td>
+				<td class="data-point ">{{country.areaInSqKm | number}}</td>
+			</tr>
+			<tr >
+				<td class="data-title ">Capital:</td>
+				<td class="data-point ">{{country.capital}}</td>
+			</tr>
+			<tr >
+				<td class="data-title ">Population of Capital:</td>
+				<td class="data-point ">{{capitalPop | number}}</td>
+			</tr>
+			<tr >
+				<td class="data-title ">Continent:</td>
+				<td class="data-point ">{{country.continent}}</td>
+			</tr>
+			<tr >
+				<td class="data-title ">{{numbers}} Neighbors:</td>
+				<td class="data-point"><a ng-repeat="neighbor in neighbors" class="neighbors" ng-href="#!/countries/{{neighbor.countryCode}}/">{{neighbor.countryName}}</a></td>
+			</tr>
+		</tbody>
+		</table> 
+		</div>
 	<div class="row">
-		<div class="data-title col-xs-6 ">Population of Country:</div>
-		<div class="data-point col-xs-6 ">123</div>
-	</div>
-	<div class="row">
-		<div class="data-title col-xs-6 ">Area:</div>
-		<div class="data-point col-xs-6 ">123</div>
-	</div>
-	<div class="row">
-		<div class="data-title col-xs-6 ">Capital:</div>
-		<div class="data-point col-xs-6 ">123</div>
-	</div>
-	<div class="row">
-		<div class="data-title col-xs-6 ">Population of Capital:</div>
-		<div class="data-point col-xs-6 ">123</div>
-	</div>
-	<div class="row">
-		<div class="data-title col-xs-6 ">3 Neighbors:</div>
-		<div class="data-point col-xs-6 ">123</div>
-	</div>
-	<div class="row">
-		<div class="country-img col-xs-6 ">3 Neighbors:</div>
-		<div class="flag-img col-xs-6 ">123</div>
+		<div class="country-img col-xs-6 ">
+		<img id='myImage' ng-src="http://www.geonames.org/img/country/250/{{country.countryCode}}.png" />
+		</div>
+		<div class="flag-img col-xs-6 ">
+			<img ng-src="http://www.geonames.org/flags/x/{{country.countryCode | lowercase}}.gif" />
+		</div>
 	</div>
 	<div class="center-block">
 		<a href="#!/" class="browse btn btn-default">Home</a>
-		<a href="" class="browse btn btn-default">Browse Countries</a>
+		<a href="#!/countries" class="browse btn btn-default">Browse Countries</a>
 	</div>
 </div>

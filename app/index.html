@@ -17,7 +17,7 @@
     <!-- endbuild -->
     <script src="./bower_components/modernizr/modernizr.js"></script>
 </head>
-<body>
+<body ng-class="{loading: isLoading}">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -25,7 +25,9 @@
       <h1 class="hero-title">Countries & Capitals</h1>
   </div>
 
-  <div class="container" ng-view></div>
+  <div class="animate-view-container">
+    <div class="container animate-view" ng-view></div>
+  </div>
   
 <!-- build:js ./_assets/combined.js -->
 <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
@@ -36,7 +38,6 @@
 <script type="text/javascript" src="./country-detail/country-detail.js"></script>
 <script type="text/javascript" src="./intro/intro.js"></script>
 <script type="text/javascript" src="./app.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <!-- endbuild -->
 </body>
 </html>
