@@ -1,0 +1,117 @@
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell; } }
+.hero-title {
+  text-align: center; }
+
+.header {
+  border-bottom: 2px solid black; }
+
+#intro {
+  margin-top: 45px; }
+
+.browse {
+  margin: 35px auto;
+  display: block;
+  width: 150px;
+  background: #65A2C5;
+  border-color: #65A2C5;
+  color: white;
+  text-shadow: none; }
+  .browse:hover {
+    background: #366e8e;
+    border-color: #366e8e;
+    color: white;
+    font-weight: 600; }
+
+.loading {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 0; }
+  .loading:before {
+    position: fixed;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    opacity: 1;
+    background: white no-repeat center center;
+    background-image: url("img/loading-animation.gif"); }
+
+.animate-view.ng-enter,
+.animate-view.ng-leave {
+  transition: 1s linear all; }
+
+.animate-view.ng-enter {
+  opacity: 0; }
+
+.animate-view.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.animate-view.ng-leave {
+  opacity: 1; }
+
+.animate-view.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.data-title {
+  text-align: right; }
+
+.country-name {
+  text-align: center; }
+
+.country-img {
+  margin-top: 45px;
+  text-align: right; }
+
+.flag-img {
+  margin-top: 45px;
+  text-align: left; }
+
+#country-detail {
+  margin-top: 45px; }
+  #country-detail .neighbors {
+    text-align: center;
+    margin: 0 3px; }
+  #country-detail .browse {
+    display: inline-block; }
+  #country-detail .center-block {
+    width: 60%; }
+  #country-detail table {
+    height: 100% !important;
+    width: auto !important; }
+    #country-detail table tbody {
+      margin: 0 auto; }
+    #country-detail table td {
+      border-top: initial !important; }
+
+#list {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 35px auto; }
+  #list th, #list td {
+    text-align: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 5px 10px;
+    margin: 0; }
+  #list th {
+    background: lightgrey; }
+
+.detail-link:hover {
+  background: lightblue; }
+
+table {
+  display: block;
+  height: 400px;
+  overflow-y: scroll; }
+
+tr.country-search-query:hover {
+  cursor: pointer;
+  background: lightblue; }
+
+/*# sourceMappingURL=main.css.map */
